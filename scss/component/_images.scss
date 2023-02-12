@@ -1,0 +1,15 @@
+@import '../utilities/mixins', '../utilities/variables';
+
+.img {
+    @include img-all;
+    &-avatar {
+      @include img-other;
+      max-height: 100%;
+    }
+    &-frame {
+      @include img-other;
+      max-width: 100%;
+      padding: 13px;
+      border: 1px solid #ccc;
+    }
+  }
