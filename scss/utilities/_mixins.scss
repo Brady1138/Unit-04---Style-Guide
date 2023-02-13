@@ -1,7 +1,5 @@
 @import '_variables.scss';
 
-@mixin img-layout {
-
 @mixin img-all {
     display: block;
     margin-left: auto;
@@ -11,5 +9,4 @@
 @mixin img-other {
     margin-top: 10px;
     max-width: 100%; 
-}
 }
