@@ -10,3 +10,7 @@
     margin-top: 10px;
     max-width: 100%; 
 }
+
+@mixin flex ($f: 100%){
+    flex-basis: $f;
+}

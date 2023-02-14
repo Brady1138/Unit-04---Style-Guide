@@ -9,8 +9,8 @@
   }
   
   [class^=col] {
+    @include flex;
     margin-top: 10px;
-    flex-basis: 100%;
     min-height: 25px;
     padding: 10px;
     border-radius: 5px;
@@ -65,5 +65,5 @@
   }
   
   .card {
-    flex-basis: 100%;
+    @include flex;
   }
