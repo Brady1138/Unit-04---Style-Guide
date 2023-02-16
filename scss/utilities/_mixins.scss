@@ -11,8 +11,8 @@
 
 ////*****Images*******/////
 
-@mixin block {
-    display: block;
+@mixin block ($b:block) {
+    display: $b;
     margin-left: auto;
     margin-right: auto;
 }
