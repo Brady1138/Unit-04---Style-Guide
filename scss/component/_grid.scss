@@ -1,5 +1,6 @@
 @import '../utilities/variables', '../utilities/mixins';
 
+
 .container {
   padding: 0 10px;
   @include mq {
@@ -20,8 +21,8 @@
 }
 
 [class^=col] {
+  @include flex-base;
   margin-top: 10px;
-  flex-basis: 100%;
   min-height: 25px;
   padding: 10px;
   border-radius: 5px;
@@ -39,6 +40,17 @@
   }
 }
 
+.card {
+  @include flex-base;
+}
+
+.centered {
+  @include mq {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @each $number, $color in $colors {
   .theme.col-#{$number} {
     background-color: #{$color};
@@ -49,19 +61,6 @@
   }
 }
 }
-
-.card {
-  flex-basis: 100%;
-}
-
-.centered {
-  @include mq {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 .logo {
   @include mq {
     margin-left: initial;
