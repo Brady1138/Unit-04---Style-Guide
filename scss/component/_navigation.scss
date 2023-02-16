@@ -1,8 +1,8 @@
 @import '../utilities/variables', '../utilities/mixins';
 
 .nav {
-  @include flex-base;
   padding-left: 0;
+  @include flex-base;
   @include flex-col;
   @include mq {
     @include flex-row;

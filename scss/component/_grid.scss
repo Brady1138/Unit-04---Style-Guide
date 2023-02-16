@@ -44,7 +44,8 @@
 
 .centered {
   @include mq {
-    @include block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @each $number, $color in $colors {

@@ -21,20 +21,40 @@
 
 .default {
   background-color: $light-blue;
+  &:hover {
+    transition: .2s;
+    background-color: lighten($light-blue , 15%);
+  }
 }
 
 .error {
   background-color: #e4757a;
+  &:hover {
+    transition: .2s;
+    background-color: lighten(#e4757a , 15%);
+  }
 }
 
 .info {
   background-color: map-get($colors, 1);
+  &:hover {
+    transition: .2s;
+    background-color: lighten(map-get($colors, 1), 15%);
+  }
 }
 
 .success {
   background-color: $green;
+  &:hover {
+    transition: .2s;
+    background-color: lighten($green, 15%);
+  }
 }
 
 .warning {
   background-color: map-get($colors, 2);
+  &:hover {
+    transition: .2s;
+    background-color: lighten(map-get($colors, 2), 15%);
+  }
 }
