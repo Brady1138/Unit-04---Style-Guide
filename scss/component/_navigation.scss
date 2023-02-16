@@ -3,10 +3,9 @@
 .nav {
   @include flex-base;
   padding-left: 0;
-  display: flex;
-  flex-direction: column;
+  @include flex-col;
   @include mq {
-    flex-direction: row;
+    @include flex-row;
     justify-content: flex-end;
     align-items: center;
   }

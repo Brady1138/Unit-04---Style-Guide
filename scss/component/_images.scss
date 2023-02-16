@@ -1,12 +1,13 @@
 @import '../utilities/mixins', '../utilities/variables';
 
 .img {
-  @include img-all;
   &-avatar {
+  @include block;
   @include img-other;
   max-height: 100%;
 }
   &-frame {
+  @include block;
   @include img-other;
   padding: 13px;
   border: 1px solid #ccc;

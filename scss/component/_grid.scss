@@ -5,18 +5,16 @@
   padding: 0 10px;
   @include mq {
     max-width: 1400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    @include block;
+
   }
 }
 
 .row {
-  display: flex;
-  flex-direction: column;
+  @include flex-col;
   padding: 1em 10px;
   @include mq {
-    flex-direction: row;
+    @include flex-row;
   }
 }
 
@@ -46,9 +44,7 @@
 
 .centered {
   @include mq {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    @include block;
   }
 }
 @each $number, $color in $colors {

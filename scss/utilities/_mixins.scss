@@ -1,13 +1,18 @@
 @import '_variables.scss';
 
+////******Media********/////
 
 @mixin mq {
-    @media (min-width: 768px) {
+    @media (min-width: $media-break) {
         @content;
     }
 }
 
-@mixin img-all {
+
+
+////*****Images*******/////
+
+@mixin block {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -18,6 +23,19 @@
     max-width: 100%; 
 }
 
+
+/////*******Display*******/////
+
 @mixin flex-base ($f: 100%){
     flex-basis: $f;
+}
+
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
 }
