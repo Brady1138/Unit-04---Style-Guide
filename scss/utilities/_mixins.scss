@@ -1,5 +1,12 @@
 @import '_variables.scss';
 
+
+@mixin mq {
+    @media (min-width: 786px) {
+        @content;
+    }
+}
+
 @mixin img-all {
     display: block;
     margin-left: auto;

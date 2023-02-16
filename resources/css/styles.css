@@ -1,4 +1,4 @@
-
+/* 
 /* ============================================= */
 /*              Base styles                      */
 /* ============================================= */
@@ -323,7 +323,6 @@ a {
 .col-12 {
   flex-basis: 100%;
 }
-
 .nav {
   flex-direction: row;
   justify-content: flex-end;
@@ -347,4 +346,4 @@ a {
   margin-right: initial;
 }
 
-}
+} */
